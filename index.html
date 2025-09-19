@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omluva Absence</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .header {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+        .content {
+            padding: 30px;
+        }
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .data-row:last-child {
+            border-bottom: none;
+        }
+        .label {
+            font-weight: 600;
+            color: #555;
+            flex-basis: 40%;
+            padding-right: 15px;
+        }
+        .value {
+            flex-basis: 60%;
+            text-align: right;
+            color: #333;
+        }
+        .value.note {
+            text-align: left;
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+        .full-width-text {
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Omluvení absence</h1>
+        </div>
+        <div class="content">
+            <div class="data-row">
+                <span class="label">Datum:</span>
+                <span class="value">19.09.2025</span>
+            </div>
+            <div class="data-row">
+                <span class="label">Hodiny:</span>
+                <span class="value">6., 7.</span>
+            </div>
+            <div class="data-row">
+                <span class="label">Předmět:</span>
+                <span class="value">TVZ</span>
+            </div>
+	    <div class="data-row">
+                <span class="label">Omluvení absence:</span>
+                <span class="value" style="color: red; font-weight: bold;">Zrušeno</span>
+            </div>
+            <div class="data-row">
+                <span class="label">Účast v hodině:</span>
+                <span class="value">-</span>
+            </div>
+            <div class="data-row">
+                <span class="label">Školní akce:</span>
+                <span class="value">-</span>
+            </div>
+            <div class="data-row full-width-text">
+                <span class="label">Text omluvy absence:</span>
+            </div>
+            <div class="data-row">
+                <span class="value note">Zrušeno, opravy chyby, zadání znovu. Zrušeno.</span>
+            </div>
+            <div class="data-row full-width-text">
+                <span class="label">Zrušil:</span>
+                <span class="value">Vlastimil Hruška, Mgr.</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
